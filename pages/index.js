@@ -1,11 +1,11 @@
-import MeetupItem from "../components/meetups/MeetupItem";
+import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_MEETUPS = [
   {
     id: "m1",
     title: "A First Meertup",
     image:
-      "https://yt3.ggpht.com/yti/APfAmoGRXr6Ob6y40L_BDc84imxW9H5l6zbbDxRFUa1c0w=s88-c-k-c0x00ffffff-no-rj-mo",
+      "https://vtv1.mediacdn.vn/thumb_w/600/2018/4/14/58d919eaf2d0331b008b4bbd-750-562-15236798033729910265.jpg",
     address: "Some address 5, 1234 Some City",
     description: "This is a first meetup",
   },
@@ -13,7 +13,7 @@ const DUMMY_MEETUPS = [
     id: "m2",
     title: "A Second Meertup",
     image:
-      "https://yt3.ggpht.com/yti/APfAmoGRXr6Ob6y40L_BDc84imxW9H5l6zbbDxRFUa1c0w=s88-c-k-c0x00ffffff-no-rj-mo",
+      "https://vtv1.mediacdn.vn/thumb_w/600/2018/4/14/58d919eaf2d0331b008b4bbd-750-562-15236798033729910265.jpg",
     address: "Some address 110, 1234 Some City",
     description: "This is a second meetup",
   },
@@ -21,14 +21,14 @@ const DUMMY_MEETUPS = [
     id: "m3",
     title: "A Third Meertup",
     image:
-      "https://yt3.ggpht.com/yti/APfAmoGRXr6Ob6y40L_BDc84imxW9H5l6zbbDxRFUa1c0w=s88-c-k-c0x00ffffff-no-rj-mo",
+      "https://vtv1.mediacdn.vn/thumb_w/600/2018/4/14/58d919eaf2d0331b008b4bbd-750-562-15236798033729910265.jpg",
     address: "Some address 54, 1234 Some City",
     description: "This is a third meetup",
   },
 ];
 
 function HomePage() {
-  return <MeetupItem meetups={DUMMY_MEETUPS} />;
+  return <MeetupList meetups={DUMMY_MEETUPS} />;
 }
 
 export default HomePage;
