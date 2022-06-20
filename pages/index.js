@@ -31,7 +31,7 @@ function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(content) {
   const req = content.req;
   const res = content.res;
 
